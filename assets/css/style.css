@@ -1,0 +1,118 @@
+/* RED : #FA2742
+DARK : #373833
+White : #E8EAE3 */
+
+
+:root {
+    --color-main: #0c66ff;
+    --color-dark: #3b506c;
+    --color-main2: #FA2742;
+    --color-dark2: #373833;
+    --color-white: #E8EAE3;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--color-dark);
+}
+
+.logo img {
+    height: 40px;
+}
+
+.navigation a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+    margin-top: 30vh;
+    /* Adjust the value as needed */
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-content {
+    width: 50%;
+}
+
+.image-holder {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image-holder img {
+    height: 100%;
+    max-width: 100%;
+}
+
+/* Add the rest of your CSS styles below */
+
+
+/* END 2 colones */
+
+h1,
+h2,
+p {
+    color: var(--color-dark);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--color-dark);
+    color: var(--color-main);
+}
+
+/* .main {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    text-align: center;
+}
+
+.image-holder {
+    width: 200px;
+    height: 200px;
+    background-color: var(--color-white);
+    margin: 20px auto;
+} */
