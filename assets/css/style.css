@@ -1,15 +1,19 @@
-/* RED : #FA2742
-DARK : #373833
-White : #E8EAE3 */
-
-
 :root {
     --color-main: #0c66ff;
-    --color-dark: #3b506c;
-    --color-main2: #FA2742;
-    --color-dark2: #373833;
+    --color-danger: #FA2742;
     --color-white: #E8EAE3;
+    --color-dark: #090d12;
+    --color-dark2: #373833;
+
+    font-family: 'Inter', sans-serif;
 }
+
+@supports (font-variation-settings: normal) {
+    :root {
+        font-family: 'Inter var', sans-serif;
+    }
+}
+
 
 body {
     margin: 0;
@@ -36,6 +40,21 @@ header {
     margin-right: 10px;
     text-decoration: none;
     color: var(--color-white);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+a {
+    box-shadow: inset 0 0 0 0 var(--color-main);
+    color: blue;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+a:hover {
+    box-shadow: inset 100px 0 0 0 var(--color-main);
+    color: white;
 }
 
 .main {
@@ -94,7 +113,22 @@ footer {
     padding: 10px;
     text-align: center;
     background-color: var(--color-dark);
-    color: var(--color-main);
+    color: var(--color-white);
+}
+
+footer p {
+    color: var(--color-white);
+    display: inline;
+    margin-right: 10px;
+}
+
+footer span {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer img {
+    vertical-align: middle;
 }
 
 /* .main {
